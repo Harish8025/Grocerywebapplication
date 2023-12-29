@@ -1,0 +1,60 @@
+<div class="wrapper">
+    <div class="centered category-buttons">
+        <mat-button-toggle-group [value]="category" (change)="getProductByCategory($event)">
+            <mat-button-toggle *ngFor="let item of getCategoryList" [value]="item?.value">
+                {{ item?.name }}
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <br />
+<br />
+
+<div *ngIf="productList.length === 0" class="centered no-products-message">
+    OUR PRODUCTS ARE EMPTITED QUICKLY BECAUSE OF CUSTOMER BUYS IT 😍
+</div>
+
+<div *ngIf="productList.length > 0" class="centered">
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Image</th>
+                <th>Product MRP</th>
+                <th>Product Quantity</th>
+                <th>Mesurement</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                <td>{{ product?.productId }}</td>
+                <td>{{ product?.productname }}</td>
+                <td>{{ product?.description }}</td>
+                <td><img [src]="product?.image" alt="{{ product?.productname }}" /></td>
+                <td>{{ product?.mrpPrice | currency: 'INR' }}</td>
+                <td>{{ product?.quantity }}</td>
+                <td>{{ product?.measurment }}</td>
+                <td>
+                    <button (click)="editProduct(product)" mat-raised-button color="primary">Edit</button>
+                    <button (click)="delProduct(product)" mat-raised-button color="warn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <div *ngIf="productList.length > 0" class="centered">
+    <app-paging
+        [totalItem]="totalItem"
+        [pageSize]="pageSize"
+        [offset]="offset"
+        (onNextPageClick)="onNextPageClick($event)"
+        (onPreviousPageClick)="onPreviousPageClick($event)"
+        (onFirstPageClick)="onFirstPageClick($event)"
+        (onLastPageClick)="onLastPageClick($event)"
+    ></app-paging>
+</div> -->
+</div>
+<br />

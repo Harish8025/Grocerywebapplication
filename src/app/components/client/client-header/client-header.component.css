@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    justify-content: space-between; /* Updated to space-between */
+    height: 60px;
+    background-color: #333; /* Updated background color */
+    align-items: center;
+    color: #fff; /* Updated text color */
+    font-size: 18px; /* Adjusted font size */
+    padding: 0 20px; /* Added padding */
+}
+
+.main > .selected {
+    background: #262424; /* Updated background color */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px; /* Adjusted padding */
+}
+
+.user-name-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px; /* Adjusted margin */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.user-name-item:hover {
+    color: #ec4e0f; /* Change text color on hover */
+}
+
+.main div {
+    cursor: pointer;
+    margin-right: 20px; /* Adjusted margin */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.main div:hover {
+    color: #ffcc66; /* Change text color on hover */
+}
+
+.main img {
+    height: 50px; /* Adjusted height */
+    width: auto; /* Allowing width to adjust accordingly */
+    margin-right: 10px; /* Added margin */
+    border-radius: 50%; /* Added border-radius for a circular effect */
+}
+
+.logo img {
+    border-radius: 30%;
+    filter: brightness(100%);
+}

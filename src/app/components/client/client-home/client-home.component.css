@@ -1,0 +1,141 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/background-with-food-smarthphone-supermarket_125540-324.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+.category-selector {
+    display: flex;
+    color: #25e3f4;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Category Button */
+.category-button {
+    background-color: #2dd333; 
+    color: #210808; 
+    border: 2px solid #4CAF50; 
+    padding: 14px 28px; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Added transition for border color */
+    text-shadow: 1px 1px 1px rgba(243, 8, 8, 0.2); 
+}
+
+.category-button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #45a049; 
+}
+
+.category-button:focus {
+    outline: none; 
+    border-color: #1565c0;
+}
+
+.category-button:hover, .category-button:focus {
+    cursor: pointer;
+}
+
+/* Product List */
+.product-list {
+    text-align: center;
+}
+
+/* No Products Message */
+.no-products-message {
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px; /* Increase the gap between grid items to 30px */
+}
+
+/* Product Card */
+.product-card {
+    background-color: #e5ee9a;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+    max-width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+/* Product Details */
+.product-details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Product Name */
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Product Description */
+.product-description {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Product Price */
+.product-price {
+    color: #388e3c;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Product Quantity Input */
+.product-quantity input {
+    padding: 10px;
+    width: 40px;
+    border: 1px solid #c25959;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+/* Styling for Angular Material Buttons */
+mat-raised-button {
+    background-color: #2196F3;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+mat-raised-button:hover {
+    background-color: #1565c0;
+}

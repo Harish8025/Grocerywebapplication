@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="logo">
+        <img src="../../../../assets/images/logo.jpg" width="50" height="50" style="border-radius: 50%; margin-right: 10px; border: 2px solid #fff;">
+    </div>
+    <div (click)="routerToLink('/client/home')" [class.selected]="url === '/client/home'">
+        <mat-icon>home</mat-icon> Home
+    </div>
+    <div (click)="routerToLink('/client/cart')" [class.selected]="url === '/client/cart'">
+        <mat-icon>shopping_cart</mat-icon> Cart List
+    </div>
+    <div (click)="routerToLink('/client/order')" [class.selected]="url === '/client/order'">
+        <mat-icon>assignment</mat-icon> Order
+    </div>
+    <div [matMenuTriggerFor]="menu" class="user-name-item">
+        <div>{{userName}}&nbsp;</div>
+        <div><mat-icon>expand_more</mat-icon></div>
+    </div>
+</div>
+
+<mat-menu #menu="matMenu">
+    <button (click)="routerToLink('/client/logout')" mat-menu-item>
+        <mat-icon>logout</mat-icon> Logout
+    </button>
+</mat-menu>

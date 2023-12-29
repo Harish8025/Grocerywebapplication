@@ -1,0 +1,38 @@
+<div class="main-header">
+    <div class="logo">
+        <img src="../../../../assets/images/logo.jpg" alt="Logo" width="40" height="40">
+    </div>
+    <div class="nav-items">
+        <div (click)="routerToLink('/admin/home')" [class.selected]="url === '/admin/home'">
+            <mat-icon>home</mat-icon>
+            Home
+        </div>
+        <div (click)="routerToLink('/admin/addproduct')" [class.selected]="url === '/admin/addproduct'">
+            <mat-icon>add_shopping_cart</mat-icon>
+            Add Grocery
+        </div>
+        <div (click)="routerToLink('/admin/listproduct')" [class.selected]="url === '/admin/listproduct'">
+            <mat-icon>shopping_basket</mat-icon>
+            List Grocery
+        </div>
+        <div (click)="routerToLink('/admin/orderlist')" [class.selected]="url === '/admin/orderlist'">
+            <mat-icon>assignment</mat-icon>
+            Order List
+        </div>
+    </div>
+    <div class="user-menu">
+        <div [matMenuTriggerFor]="menu" class="user-name-item">
+            <div>{{ userName }}&nbsp;</div>
+            <div>
+                <mat-icon>expand_more</mat-icon>
+            </div>
+        </div>
+    </div>
+</div>
+
+<mat-menu #menu="matMenu">
+    <button (click)="routerToLink('/admin/logout')" mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        Logout
+    </button>
+</mat-menu>

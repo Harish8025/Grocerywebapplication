@@ -1,0 +1,13 @@
+h1 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+img {
+    width: 100vw;
+    height: 650px;
+    
+}
+#exploreMenuSection img {
+    height: 203px;
+    background-image: url();
+}

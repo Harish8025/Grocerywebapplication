@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://content.webengage.com/wp-content/uploads/sites/4/2023/04/Hero-2-700x300.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.client-login {
+  max-width: 500px; /* Increase the max-width */
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Decrease the opacity */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Increase the border-radius */
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-icon {
+  position: relative;
+}
+
+.icon {
+  position: absolute; /* Changed from 'center' to 'absolute' */
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+input {
+  width: calc(100% - 24px);
+  padding: 14px; /* Adjusted padding */
+  box-sizing: border-box;
+  border: 1px solid #1cc0ed;
+  border-radius: 6px; /* Adjusted border-radius */
+  margin-top: 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px; /* Adjusted padding */
+  cursor: pointer;
+  border-radius: 6px; /* Adjusted border-radius */
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.new-user-register {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.sign-up {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

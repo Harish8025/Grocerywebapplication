@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.contact {
+  padding: 50px 0;
+  background: linear-gradient(to right, #71a4db, #0056b3);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2.tittle-w3l {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2em;
+  letter-spacing: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-grid {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.contact-grid1 {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-grid1:hover {
+  transform: translateY(-10px);
+}
+
+.contact-grid1 .con-ic {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-grid1 .con-ic i {
+  color: #5cd9fb;
+  font-size: 30px;
+}
+
+.contact-grid1 .con-ic:hover {
+  background-color: #0056b3;
+}
+
+.contact-grid1 h3 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-grid1:hover h3 {
+  color: #0056b3;
+}
+
+.contact-grid1 p {
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+.additional-section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.additional-grids {
+  margin-top: 2em;
+}
+
+.additional-item {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.additional-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.additional-item i {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.additional-item h3 {
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.additional-item:hover h3 {
+  color: #0056b3;
+}
+
+.additional-item p {
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .contact-grid {
+    flex-basis: 100%;
+  }
+}

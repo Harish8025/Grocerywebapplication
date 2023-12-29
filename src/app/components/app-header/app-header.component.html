@@ -1,0 +1,11 @@
+<div class="main">
+    <div class="logo-container">
+        <img src="../../../assets/images/logo.jpg" alt="Logo" width="50" height="50">
+    </div>
+    <div (click)="gotourl('')" [class.selected]="url === '/'">Home</div>
+    <div (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">About Us</div>
+    <!-- <div (click)="gotourl('client-register')"  [class.selected]="url === '/client-register'">Register</div> -->
+    <div (click)="gotourl('client-login')" [class.selected]="url === '/client-login'">Customer Login</div>
+    <div (click)="gotourl('admin-login')" [class.selected]="url === '/admin-login'">Admin Login</div>
+    <div (click)="gotourl('contact-us')" [class.selected]="url === '/contact-us'">Contact us</div>
+</div>

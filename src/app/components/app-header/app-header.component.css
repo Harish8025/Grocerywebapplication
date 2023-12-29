@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #333; 
+    align-items: center;
+    color: #fff; 
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.main > .selected {
+    background: #262424; 
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.main img {
+    height: 50px; 
+    width: auto;
+    margin-right: 10px;
+    border-radius: 50%; 
+    
+}
+
+.main div {
+    cursor: pointer;
+    margin-right: 20px; /* Adjusted margin */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.main div:hover {
+    color: #ffcc66; /* Change text color on hover */
+}
+
+.sign-up {
+    color: #ffcc66; /* Updated color for consistency */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.sign-up:hover {
+    color: #ec4e0f; /* Change text color on hover */
+}
+
+.logo-container img {
+    border-radius: 30%;
+    filter: brightness(100%);
+}

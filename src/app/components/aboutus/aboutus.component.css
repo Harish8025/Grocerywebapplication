@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://www.w360.asia/wp-content/uploads/2023/10/2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-page {
+  background: rgba(248, 248, 248, 0.9); /* Adjust the opacity as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-section h1 {
+  color: #333;
+}
+
+.welcome h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-left,
+.welcome-right-top {
+  margin-bottom: 20px;
+}
+
+.welcome-left h3,
+.welcome-left p {
+  color: #333;
+}
+
+.welcome img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.welcome-left ul {
+  margin-left: 20px;
+  list-style-type: square;
+  color: #555;
+}
+
+.welcome-left ul li {
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.welcome-left p {
+  line-height: 1.6;
+}
+
+.welcome h2,
+.welcome-left h3,
+.welcome-left ul {
+  margin-bottom: 20px;
+}
+
+.welcome-left ul {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-left,
+  .welcome-right-top {
+      margin-bottom: 0;
+  }
+}

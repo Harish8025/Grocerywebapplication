@@ -1,0 +1,43 @@
+<div class="wrapper"></div>
+<br/>
+<div class="centered category-selector">
+    <mat-button-toggle-group [value]="category" (change)="getProductByCategory($event)">
+        <mat-button-toggle *ngFor="let item of getCategoryList" [value]="item?.value" matTooltip="{{ item?.description }}">
+            {{ item?.name }}
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+
+
+<div class="centered product-list">
+    <div *ngIf="productList.length === 0" class="no-products-message">
+        Sorry! 😓 Our products are quickly sold out. Please be patient; we'll get more products soon.
+    </div>
+
+    <div *ngIf="productList.length > 0" class="product-grid">
+        <div *ngFor="let product of productList" class="product-card">
+            <img [src]="product?.image" alt="{{ product?.productname }}" class="product-image" />
+            <div class="product-details">
+                <div class="product-name">{{ product?.productname }}</div>
+                <div class="product-description">{{ product?.description }}</div>
+                <div class="product-price">₹{{ product?.mrpPrice }}</div>
+                <div class="product-quantity">
+                    <input type="text" [id]="product?.productId" placeholder=1 />
+                </div>
+                <button (click)="addToCart(product)" mat-raised-button color="primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div *ngIf="productList.length > 0" class="centered">
+    <app-paging
+        [totalItem]="totalItem"
+        [pageSize]="pageSize"
+        [offset]="offset"
+        (onNextPageClick)="onNextPageClick($event)"
+        (onPreviousPageClick)="onPreviousPageClick($event)"
+        (onFirstPageClick)="onFirstPageClick($event)"
+        (onLastPageClick)="onLastPageClick($event)"
+    ></app-paging>
+</div> -->

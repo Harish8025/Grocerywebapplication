@@ -1,0 +1,92 @@
+.main
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: greenyellow;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+.main > .selected {
+    background: white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+.user-name-item {
+    display: flex;
+    align-items: center;
+}
+
+.main div
+{
+    cursor: pointer;
+}
+.main img {
+    height: 111px;
+    width: 200px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; 
+    color: #fff; 
+}
+
+.logo img {
+    border-radius: 30%;
+    filter: brightness(100%);
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 120px; /* Adjusted margin */
+    position: relative;
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.nav-items div:hover {
+    color: #ffcc66; /* Change text color on hover */
+}
+
+.nav-items div mat-icon {
+    margin-right: 5px;
+}
+
+.selected {
+    font-weight: bold;
+    color: #ffcc66; /* Set text color for the selected item */
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-name-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px; /* Add margin to the user-name-item */
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.user-name-item:hover {
+    color: #ffcc66; /* Change text color on hover */
+}
+
+.user-name-item mat-icon {
+    margin-left: 5px;
+}

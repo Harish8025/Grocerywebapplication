@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp3537541.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center h1 {
+    color: #07f934;
+    font-size: 1500%; /* Increased font size */
+    font-weight: bold;
+    margin: 0; /* Removed margin to ensure maximum size */
+    text-shadow: 4px 4px 8px rgba(74, 233, 175, 0.7); /* Adjusted shadow for larger text */
+}

@@ -1,0 +1,74 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/299/835/non_2x/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg);
+    background-size: 200vh;
+    background-position: center;
+}
+ .body {
+    width: 120%;
+    max-width: 1200px;
+    overflow-x: hidden;
+  }
+
+tbody, td, tfoot, th, thead, tr {
+    border: none;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.register-tab {
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffefbf;
+}
+
+table tr td {
+    padding: 12px;
+}
+
+.register-tab input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.register-tab input:focus {
+    border-color: #007bff;
+}
+
+.register-tab button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.register-tab button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

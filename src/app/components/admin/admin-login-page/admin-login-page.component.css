@@ -1,0 +1,69 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://c0.wallpaperflare.com/preview/876/1004/860/shopping-online-e-commerce-fashion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.admin-login {
+    max-width: 700px; /* Increased the max-width */
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Decreased the opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.item-icon {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 14px; /* Adjusted padding */
+    box-sizing: border-box;
+    border: 1px solid #1cc0ed;
+    border-radius: 6px;
+    margin-top: 16px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 16px 32px; /* Adjusted padding */
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

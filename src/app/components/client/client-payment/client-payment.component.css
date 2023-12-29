@@ -1,0 +1,83 @@
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/premium-photo/d-shopping-online-concept-with-shopping-cart-bag-balloon-credit-card-mobile-phone-3d-rendering_265427-252.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.body {
+  width: 120%;
+  max-width: 1200px;
+  overflow-x: hidden;
+}
+
+.payment-tab {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Use rgba to add some transparency to the card */
+  box-shadow: 0 0 10px rgba(230, 62, 62, 0.1);
+  border-radius: 8px;
+}
+
+.centered {
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+mat-icon {
+  cursor: pointer;
+  color: #007bff;
+}
+
+mat-icon:hover {
+  color: #0056b3;
+}
+
+textarea,
+input[type="text"] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
